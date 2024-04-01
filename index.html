@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/index.css">
+    <title>Valorant Skin Search</title> 
+</head>
+<body>
+
+    <div class="container mt-5">
+        <h1 class="text-center mb-4"><img src="./images/logo.png" class="card-img-top"  style="width:200px;height:auto;"></h1>
+        <div class="form-group d-flex">
+            <input type="text" id="searchInput" class="form-control me-2" placeholder="검색어를 입력하세요">
+            <button class="btn btn-outline-success" onclick="findSkinQuery()">Search</button>
+        </div>
+        <div id="skins" class="card-columns">
+
+        </div>
+    </div>
+
+    <div class="modal fade" id="skinModal" tabindex="-1" role="dialog" aria-labelledby="skinModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="skinTitle">Modal Title</h5>
+            </div>
+            <div class="modal-body" id="skinvid">
+              
+            </div>
+            <div class="modal-footer">
+                <ul class="pagination" id="skinlevel">
+
+                </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+
+    <script src="./js/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</body>
+</html>
