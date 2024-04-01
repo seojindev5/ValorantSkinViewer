@@ -1,0 +1,16 @@
+#skins {
+    margin-top: 10px;
+}
+
+.card-img-top {
+    margin-top: 10px;
+}
+
+.card {
+    padding-top: 50px;
+    cursor: pointer;
+}
+
+.page-link {
+    cursor: pointer;
+}
